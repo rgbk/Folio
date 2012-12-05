@@ -8,7 +8,6 @@ gem 'rails', '3.2.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem "sqlite3", "~> 1.3.6"
-
 gem "heroku", "~> 2.33.2"
 
 # Gems used only for assets and not required
