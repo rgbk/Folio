@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>ruby-study-notes</title>
+	<meta name="generator" content="iA Writer for Mac 1.4 (1.4)" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+</head>
+<body>
+<h1>The Well Grounded Rubyist</h1>
+
+<hr/>
+<h1>Chapter 1</h1>
+
+<h2>Overview</h2>
+
+<ul><li>Basic syntax and techniques
+</li><li>Write and run a program
+</li><li>Split a program into more than 1 file
+</li><li>Learn several variations on the process of running the <code>ruby</code>
+</li><li>Important auxiliary tools designed to make life easier
+</li></ul>
+<p>Also:
+</p>
+<ul><li>The core language
+<ul><li>Design principles
+</li><li>syntax
+</li><li>semantics
+</li></ul></li><li>Extensions and libraries that ship with Ruby
+<ul><li>The facilities for adding your own
+</li></ul></li><li>Command-line tools that come with Ruby
+<ul><li>Other important utilities
+</li></ul></li></ul>
+<hr/>
+<h2>1.1 Basic Ruby Language literacy</h2>
+
+<p>Learn syntax, Write Code, Run programs
+</p>
+<h2>Meet Interactive Ruby (irb), your new best friend</h2>
+
+<ol><li><code>irb --simple-prompt</code>
+</li></ol>
+<h2>A Ruby syntax survival kit</h2>
+
+<p><strong>Assignment:</strong>
+</p><pre><code>x=1
+</code>
+</pre><ul><li><code>=</code> <em>binds</em> a local variable on the left to an object on the right.
+</li></ul>
+<p><strong>Print something on the screen:</strong>
+</p><pre><code>puts x
+</code>
+<code>print x
+</code>
+<code>p x
+</code>
+</pre><ul><li><code>p</code> outputs and <em>inspect</em> string which may contain extra info about what it's printing
+</li></ul>
+<p><strong>Get a line of keyboard input:</strong>
+</p><pre><code>string = gets
+</code>
+<code>hello!
+</code>
+<code>print string
+</code>
+</pre><ul><li><code>gets</code> assigns the input line directly to a variable.
+</li></ul>
+<p><strong>Convert a numeric string to a number:</strong>
+</p><pre><code>x=&quot;100&quot;.to_i
+</code>
+</pre><ul><li>arithmetic won't work with numeric strings
+</li></ul>
+<p><strong>Compare to Values:</strong>
+</p><pre><code>x == y
+</code>
+</pre>
+<p><strong>Conditional execution:</strong>
+</p><pre><code>if x==y
+</code>
+<code>	puts &quot;true&quot;
+</code>
+<code>else
+</code>
+<code>	puts &quot;false&quot;
+</code>
+<code>end
+</code>
+</pre><ul><li>Conditional statements always end with the word <code>end</code>
+</li></ul>
+<p><strong>Special value objects:</strong>
+</p><pre><code>true
+</code>
+<code>nil
+</code>
+<code>false
+</code>
+</pre><ul><li><code>nil</code> is a kind of <em>"non-object"</em>
+<ul><li>indicates the <em>absence</em> of a value or result
+<p>*<code>false</code> and <code>nil</code> cause a conditional statement to fail
+</p></li></ul></li><li><strong>NB</strong><code>0</code> and empty strings cause a conditional statement to succeed!
+</li></ul>
+<p><strong>The default object:</strong>
+</p><pre><code>self
+</code>
+</pre><ul><li>Self is a role that different objects play, depending on the execution context
+</li></ul>
+<p><strong>Comments:</strong>
+</p><pre><code>\#A Comment
+</code>
+</pre>
+<h2>1.1.3 The variety of Ruby identifiers</h2>
+
+<p>Ruby has a small number of identifier types that you'll want to be able to <em>recognise</em>, helps with understanding code
+</p>
+<p><strong>Local Variables</strong>
+Always start <em>lowercase</em> or <em>underscore</em>
+</p><pre><code>x, string, __abc__, start_value
+</code>
+</pre>
+<p><strong>Instance Variables</strong>
+Serve the purpose of storing information for <em>individual objects</em>
+</p><pre><code>@age, @last_name
+</code>
+<p>NB - Doesn't start with Uppercase
+</p></pre>
+<p><strong>Class Variables</strong>
+Same as above
+</p><pre><code>@@running-total
+</code>
+</pre>
+<p><strong>Global Variable</strong>
+No rules, so long as it has the <code>$</code> sign
+</p>
+<p><strong>Constants</strong>
+Can start with UpperCase, CamelCase i.e. <code>FirstName</code> or <code>FIRST_NAME</code>
+</p>
+<p><strong>Keywords</strong>
+</p><ul><li>About 40 of them, and short, i.e:
+<ul><li><code>def</code> (method definitions)
+</li><li><code>class</code> (class definitions)
+</li><li><code>if</code> (conditional execution)
+</li><li>`<strong>FILE</strong>' (Name of file <em>currently</em> being executed
+</li></ul></li></ul>
+<p><strong>Method Names</strong>
+</p><ul><li>Same as local variables except they end with <code>?</code>, <code>!</code> or <code>=</code> 
+</li><li>They don't want to draw attention to themselves
+</li><li>are simply <em>expressions</em> that provide a value
+</li></ul>
+<h2>1.1.4 Method calls, messages and Ruby objectsn</h2>
+
+
+
+
+
+</body>
+</html>
